@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+  </head>
+  <body>
+    <!-- Display variable -->
+    <%= name %>
+    2 + 2 = <%=2+2%>
+    <%= name.toUpperCase() %>
+
+    <!-- Conditional rendering -->
+    <% if(userId===20){ %>
+    <h1>UserId : <%= userId %></h1>
+    <% }else if(userId === 30){ %>
+    <h1>UserId : <%= userId %></h1>
+    <% }else{ %>
+    <h1>User Not Found</h1>
+    <% } %>
+
+    <!-- For Loop -->
+    <% for(let i=0;i<10;i++){ %>
+      <h1><%=i %></h1>
+    <% } %>
+
+    <% const data = [1,2,3,4,5] %> 
+    <% for(d in data){ %>
+    <h1><%= d %></h1>
+    <% } %>
+  
+    <% var current = new Date() %>
+    <%= current %>
+  </body>
+</html>
